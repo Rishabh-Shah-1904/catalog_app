@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode
           .light, //Sets the theme of the app to the system theme //By default dark and light can also be used
       theme: ThemeData(
-        primarySwatch: Colors.amber, //Defines the colour of the page
+        primarySwatch: Colors.indigo, //Defines the colour of the page
         primaryTextTheme: GoogleFonts.latoTextTheme()
       ),
       darkTheme: ThemeData(
