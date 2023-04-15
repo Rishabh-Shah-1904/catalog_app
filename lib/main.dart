@@ -1,5 +1,6 @@
 import 'package:catalog_app/pages/home_page.dart';
 import 'package:catalog_app/pages/login_page.dart';
+import 'package:catalog_app/utils/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode
           .light, //Sets the theme of the app to the system theme //By default dark and light can also be used
       theme: ThemeData(
-        primarySwatch: Colors.deepPurple, //Defines the colour of the page
+        primarySwatch: Colors.amber, //Defines the colour of the page
         primaryTextTheme: GoogleFonts.latoTextTheme()
       ),
       darkTheme: ThemeData(
@@ -23,10 +24,8 @@ class MyApp extends StatelessWidget {
       routes: {
         "/": (context) => 
             LoginPage(),
-        '/Home': (context) =>
-            HomePage(), 
-        '/Login': (context) =>
-            LoginPage(),
+        myRoutes.homeRoute: (context) => HomePage(),
+        myRoutes.loginRoute: (context) => LoginPage(),
       }, //Routes are basically raasta, on starting which page to show, and many different predefined routes with an initial routes
     );
   }

@@ -1,3 +1,4 @@
+import 'package:catalog_app/pages/login_page.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -9,7 +10,7 @@ class HomePage extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-          child: Text("Welcome to Flutter Rishabh"),
+          child: Text("Welcome to Flutter"),
         ),
       ),
     );
