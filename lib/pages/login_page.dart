@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
   @override
-  State<LoginPage> createState() =>
+  State<LoginPage> createState() => //Used to create a stateful widget
       _LoginPageState(); // _ in the variable name ,makes the variabler private
 }
 
@@ -59,10 +59,10 @@ class _LoginPageState extends State<LoginPage> {
                 SizedBox(
                   height: 40,
                 ),
-                InkWell(
+                InkWell( //Inkwell can add widgets
                   onTap: () async { // Await function will work only if we call the async modifier
                     setState(() {
-                      changeButton = true;
+                      changeButton = true; //Changing the state of the button
                     });
 
                     await Future.delayed(Duration(seconds:2)); // waits or stops the program for the mentioned duration
@@ -74,7 +74,7 @@ class _LoginPageState extends State<LoginPage> {
                     height: 50,
                     alignment: Alignment
                         .center, // Centers the text or anything in the container
-                    child: changeButton ? Icon(Icons.done,color: Colors.white) : Text(
+                    child: changeButton ? Icon(Icons.done,color: Colors.white) : Text( //Adding the done icon
                       'Login',
                       style: TextStyle(
                         color: Colors.black,
